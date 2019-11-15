@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/captest/static/css/main.b100e6da.chunk.css",
-    "main.js": "/captest/static/js/main.8e7360de.chunk.js",
-    "main.js.map": "/captest/static/js/main.8e7360de.chunk.js.map",
+    "main.js": "/captest/static/js/main.3dbfacd5.chunk.js",
+    "main.js.map": "/captest/static/js/main.3dbfacd5.chunk.js.map",
     "runtime-main.js": "/captest/static/js/runtime-main.fb3e692b.js",
     "runtime-main.js.map": "/captest/static/js/runtime-main.fb3e692b.js.map",
     "static/js/2.91e6b2cd.chunk.js": "/captest/static/js/2.91e6b2cd.chunk.js",
     "static/js/2.91e6b2cd.chunk.js.map": "/captest/static/js/2.91e6b2cd.chunk.js.map",
     "index.html": "/captest/index.html",
-    "precache-manifest.1bb0d073c3cf96a49d4f359f4b22e046.js": "/captest/precache-manifest.1bb0d073c3cf96a49d4f359f4b22e046.js",
+    "precache-manifest.1dde5b479e0b05855cf7b4173e75971b.js": "/captest/precache-manifest.1dde5b479e0b05855cf7b4173e75971b.js",
     "service-worker.js": "/captest/service-worker.js",
     "static/css/main.b100e6da.chunk.css.map": "/captest/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/captest/static/media/logo.25bf045c.svg"
+    "static/media/logo.svg": "/captest/static/media/logo.88a6f9cb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fb3e692b.js",
     "static/js/2.91e6b2cd.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.8e7360de.chunk.js"
+    "static/js/main.3dbfacd5.chunk.js"
   ]
 }
