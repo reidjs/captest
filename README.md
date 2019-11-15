@@ -1,4 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rent Cap
+
+This project is an effort to help Californians figure out whether the Tenant Protection Act of 2019 will protect them from excessive rent increases.
+
+Most renters will be affected, but our goal is to help them answer that question using publically available data based on their address.
+
+[Text of the bill](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB1482)
+
+[Read more about it](https://www.latimes.com/california/story/2019-08-30/california-rent-increases-cap-newsom-housing-crisis)
+
+---
+
+## Contributing
+
+This project was started during the 2019 National Day of Civic Hacking through the [Code for SF](https://codeforsanfrancisco.org/) brigade by [kylpeacock@gmail.com](mailto:kylpeacock@gmail.com).
+
+Our project is open-source and under active development, so please get in touch with us and contribute! We have all kinds of ways to contribute, from Copywriting to UX, as well as Front and Back-end development.
+
+## Development
+
+Ported from codepen https://codepen.io/reidjs/full/oNNaPaj. Styled with [Bootstrap](https://getbootstrap.com/docs/4.3/layout/overview/)
+
+## Adding copy
+
+Modify the objects in `english.json` and `spanish.json`.
 
 ## Available Scripts
 

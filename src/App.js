@@ -14,6 +14,7 @@ class App extends React.Component {
     }
   }
   render() {
+    const text = this.props.languages[this.props.language]
     return (
       <div className="app-container">
         <div>
@@ -21,7 +22,7 @@ class App extends React.Component {
             <div>
               <img onClick={() => this.setState({showCalculator: false, showEligible: false})} src={logo}>
               </img>
-              <button className="btn btn-outline-primary" onClick={() => this.setState({showCalculator: false, showEligible: true})}>{this.props.languages[this.props.language]['eligibleButton']}</button>
+              <button className="btn btn-outline-primary" onClick={() => this.setState({showCalculator: false, showEligible: true})}>{text.nav.eligible}</button>
               <button className="btn btn-outline-primary" onClick={() => this.setState({showEligible: false, showCalculator: true})}>I'm eligible (Calculator)</button>
             </div>
             <div>

@@ -20,6 +20,8 @@ class FlowChart extends React.Component {
       this.setState({eligible: 'unknown'})
   }
   render() {
+    const text = this.props.languages[this.props.language]
+
     const setOverFifteen = val => {
       this.setState({overFifteen: val}, () => {
         this.setEligible()
@@ -33,12 +35,12 @@ class FlowChart extends React.Component {
     const buildingList = [{name: 'Apartment', type: 'apartment'}, {name: 'House', type:'house'}, {name: 'Dorm', type: 'dorm'}]
     const buildings = buildingList.map(building => {
       return (
-        <li style={{cursor: 'pointer'}} className={building.type == this.state.buildingType ? 'active' : ''} onClick={() => setBuildingType(building.type)} key={building.name}>{building.name}</li>
+        <li style={{cursor: 'pointer'}} className={building.type === this.state.buildingType ? 'active' : ''} onClick={() => setBuildingType(building.type)} key={building.name}>{building.name}</li>
       )
     })
     return (
       <div>
-        <h1>{this.props.languages[this.props.language]['eligibleTitle']}</h1>
+        <h1>{text.flowchart.title}</h1>
         <h2>Does your city have existing ordinance</h2>
         <ul>
           <li>Berkeley</li>
@@ -63,10 +65,10 @@ class FlowChart extends React.Component {
           </div>
           
         }
-        {this.state.eligible == 'no' &&
+        {this.state.eligible === 'no' &&
           <h1>Sorry, you are not eligible</h1>
         }
-        {this.state.eligible == 'yes' &&
+        {this.state.eligible === 'yes' &&
           <h1>Congrats, you are eligible</h1>
         }
       </div>

@@ -58,7 +58,7 @@ class Calculator extends React.Component {
   }
   handleRentIncreaseValueChange(id, e) {
     const t = this.state.rentIncreases.slice(0)
-    const idx = t.findIndex(el => el.id == id)
+    const idx = t.findIndex(el => el.id === id)
     if (idx < 0) return
     t[idx].value = e.target.value
     this.setState({rentIncreases: t})
@@ -66,7 +66,7 @@ class Calculator extends React.Component {
   removeRentIncrease(id) {
     const arr = this.state.rentIncreases
     if (arr.length < 2) return
-    const idx = arr.findIndex(el => el.id == id)
+    const idx = arr.findIndex(el => el.id === id)
     if (idx < 0) return
     const t = this.state.rentIncreases.slice(0)
     const el = t.splice(idx, 1)
@@ -83,6 +83,8 @@ class Calculator extends React.Component {
   }
   
   render() {
+    const text = this.props.languages[this.props.language]
+
     const maxRent = this.calculateMaxRent();
     const rentIncreasePercentage = this.calculateRentIncreasePercentage();
     const refund = () => {
@@ -107,7 +109,7 @@ class Calculator extends React.Component {
     })
     return (
       <div>
-        <h1>{this.props.languages[this.props.language]['calculatorTitle']}</h1>
+        <h1>{text.calculator.title}</h1>
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">Where do you live?</h5>

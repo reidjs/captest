@@ -5,24 +5,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import { createStore} from 'redux'
-
-const english = {
-  eligibleButton: 'Am I eligible?',
-  calculatorTitle: 'Rent Cap Calculator',
-  eligibleTitle: 'Are you eligible?'
-}
-
-const spanish = {
-  eligibleButton: 'Porque no los dos?',
-  calculatorTitle: 'Estas bien',
-  eligibleTitle: 'Como estas'
-}
+import { createStore } from 'redux'
+import english from './english.json'
+import spanish from './spanish.json'
 
 const language = 'english'
 
 const languages = {
-  english, spanish
+  english,
+  spanish
 }
 
 const initialState = {
